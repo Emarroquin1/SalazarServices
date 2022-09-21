@@ -187,8 +187,8 @@
 									jQuery('.mean-container').prepend('<div class="mean-bar">'
 				                    +'<a href="#nav" class="meanmenu-reveal" style="'+meanStyles+'">Show Navigation</a><nav class="mean-nav"></nav>'+
 									'<a href="#usuario"  onclick="openSideMenu()"><img class="ImgNagbar ImgUsuario"'+ 
-									'src="http://drive.google.com/uc?export=view&id=1P_P1wvvhsdFIZz4GPZUwsoGLPG-co6Yj"' +
-									'/></a>   </div>');
+									'src="images/_usuario.png"' +
+									'/></a></div>');
 
 
 

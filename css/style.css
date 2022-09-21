@@ -493,18 +493,14 @@ transition: 0.5s;
 }
 .side-nav a{
 
-	display: block;
- font-size: 15px;
- color: #cfcece;
-transition: 0.4s;
-
-}
-
-.imagenCarucel{
-
+display: block;
+font-size: 15px;
+color: #cfcece;
 
 
 }
+
+
 
 .menu-area-main li.active a {
 	color: #000;

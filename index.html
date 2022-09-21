@@ -58,7 +58,7 @@
                               <li> <a href="#service"> Service</a> </li>
                               <li> <a href="#screenshot">Our Jobs</a> </li>
                               <li class="mean-last"> <a href="#contact">Contact us</a> </li>
-                              <li> <a href="#usuario"  onclick="openSideMenu()"><img class="ImgNagbar" src="images\usuario.png"  /></a> </li>
+                              <li> <a href="#usuario"  onclick="openSideMenu()"><img class="ImgNagbar" src="images\_usuario.png"  /></a> </li>
                               
                            </ul>
                         </nav>
@@ -71,9 +71,9 @@
          <!-- end header inner --> 
       </header>
       <div id="side-menu" class="side-nav">
-         <a href="#cerrar" onclick="closeSideMenu()" class="btn-close">&times;</a>
-         <a href="# ">Login</a>
-         <a href="# ">Sign in</a>
+         <a id="aUsuario" href="#cerrar" onclick="closeSideMenu()" class="btn-close">&times;</a>
+         <a id="aUsuario2" href="# ">Login</a>
+         <a id="aUsuario3" href="# ">Sign in</a>
 
 
       </div>
@@ -396,7 +396,14 @@ function openSideMenu(){
       document.getElementById('side-menu').style.width ='150px';
       document.getElementById('menu').style.marginLeft ='150px';
       document.getElementById('side-menu').style.visibility ='visible';
+      document.getElementById('aUsuario').style.visibility ='visible';
+      document.getElementById('aUsuario2').style.visibility ='visible';
+      document.getElementById('aUsuario3').style.visibility ='visible';
    }else{
+      document.getElementById('side-menu').style.visibility ='visible';
+      document.getElementById('aUsuario').style.visibility ='visible';
+      document.getElementById('aUsuario2').style.visibility ='visible';
+      document.getElementById('aUsuario3').style.visibility ='visible';   
    document.getElementById('side-menu').style.width ='150px';
    document.getElementById('menu').style.marginRight ='150px';
    document.getElementById('side-menu').style.visibility ='visible';
@@ -408,11 +415,20 @@ function closeSideMenu(){
    w = window.innerWidth;
 
    if (w<=760){
+      document.getElementById('aUsuario').style.visibility ='hidden';
+      document.getElementById('aUsuario2').style.visibility ='hidden';
+      document.getElementById('aUsuario3').style.visibility ='hidden';
       document.getElementById('side-menu').style.visibility ='hidden';
       document.getElementById('side-menu').style.width ='0px';
       document.getElementById('menu').style.marginLeft ='0px';
+      document.getElementById('menu').style.marginLeft ='0px';
+   
    }
    else{
+      document.getElementById('aUsuario').style.visibility ='hidden';
+      document.getElementById('aUsuario2').style.visibility ='hidden';
+      document.getElementById('aUsuario3').style.visibility ='hidden';
+      document.getElementById('side-menu').style.visibility ='hidden';
    document.getElementById('side-menu').style.visibility ='hidden';
    document.getElementById('side-menu').style.width ='0px';
    document.getElementById('menu').style.marginRight ='0px';

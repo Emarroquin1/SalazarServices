@@ -181,24 +181,50 @@
 
 @media  (max-width:760px) {
 
+    .side-nav a{
+       visibility: hidden;
+        transition: 0.3s;
+        font-size: 10px;
+    }
+    #aUsuario{
+        font-size: 30px;
+    }
+    
     .side-nav{
         left: 0;
-     
-        
-
-
         height: 100%;
         width: 0;
         z-index: 999;
         top: 0;
-      
         background-color: #000;
         opacity: 1;
         position: fixed;
         transition: 0.5s;
-        visibility: hidden;
+        visibility: visible;
     }
+   
     
+}
+@media  (min-width:760px) {
+    .side-nav{
+        height: 100%;
+        width: 0;
+        z-index: 999;
+        top: 0;
+        right: 0;
+        background-color: #000;
+        opacity: 1;
+        position: fixed;
+        transition: 0.5s;
+    }
+    .side-nav a{
+    
+    display: block;
+    font-size: 15px;
+    color: #cfcece;
+    
+    
+    }
     
 }
 
