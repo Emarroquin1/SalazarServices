@@ -1636,7 +1636,7 @@ border-radius: 20px;
 background: transparent;
 text-align: center;
 transition: 1s;
-box-shadow: 0px 0px 2px;
+box-shadow: 0px 0px 0px;
 
 }
 
@@ -1656,8 +1656,7 @@ transition: 0.5s;
 }
 .contenedorServices figure .capaFigure .afigure{
 	font-size: large;	
- position: relative;
- 
+
 
  transition: 0.4s;
 color: rgb(9, 255, 140);
