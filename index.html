@@ -237,50 +237,56 @@
          <div class="container margin-r-l">
             <div class="row">
                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 thumb">
-                  <div class="service-box ">
+                  <div class="service-box contenedorServices">
                      <figure>
                        
-                        <img  src="https://www.cheappaintersingapore.com/wp-content/uploads/2021/03/tg3q35hq.jpg" class="zoom img-fluid Imgfancybox"  alt="">
-                        </a>
-                        <span class="hoverle">
-                        <a href="https://www.cheappaintersingapore.com/wp-content/uploads/2021/03/tg3q35hq.jpg" class="fancybox" rel="ligthbox">Painting</a>
-                        </span>  
+                        <img  src="https://www.cheappaintersingapore.com/wp-content/uploads/2021/03/tg3q35hq.jpg" class="img-fluid Imgfancybox"  alt="">
+                        <div class="capaFigure" id="capa1">
+                           <a class="afigure" id="a1" onclick="abrirImagen1()">Painting</a>
+                           <p class="p1figure" id="p1">Applying paint, stain and other finishes to paint surfaces using paintbrushes, rollers or sprayers. Maintaining an inventory of supplies like paint brushes, rollers and tarps. Removing old finish using scrapers, chemical compounds or blowtorches. Estimating time and material costs on painting projects. </p>
+                        </div>
                      </figure>
                   </div>
                </div>
                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 thumb">
-                  <div class="service-box">
+                  <div class="service-box contenedorServices">
                      <figure>
                       
-                        <img  src="images/landscape.jpg" class="zoom img-fluid Imgfancybox"  alt="">
-                        </a>
-                        <span class="hoverle">
-                        <a href="images/landscape.jpg" class="fancybox" rel="ligthbox">Landscape</a>
-                        </span>
+                        <img  src="images/landscape.jpg" class="img-fluid Imgfancybox"  alt="">
+
+                        <div class="capaFigure" id="capa2">
+                           <a id="a2" class="afigure" onclick="abrirImagen2()">landscape</a>
+                           <p class="p1figure" id="p2" >Mowing, edging and fertilizing lawns. Weeding and mulching landscape beds. Trimming small trees, hedges and shrubs. Removing unwanted, dead or damaged trees. Planting shrubs, flowers and trees.</p>
+                        </div>
+      
                      </figure>
                   </div>
                </div>
                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 thumb">
-                  <div class="service-box ">
+                  <div class="service-box contenedorServices">
                      <figure>
                      
-                        <img  src="images/preasurewatch.jpg" class="zoom img-fluid Imgfancybox"  alt="">
-                        </a>
-                        <span class="hoverle">
-                        <a href="images/preasurewatch.jpg" class="fancybox" rel="ligthbox">Pressure wash</a>
-                        </span>
+                        <img  src="images/preasurewatch.jpg" class=" img-fluid Imgfancybox"  alt="">
+                        <div class="capaFigure" id="capa3">
+                           <a id="a3" class="afigure" onclick="abrirImagen3()" >pressure wash</a>
+                           <p class="p1figure" id="p3" >El lavado a presión utiliza agua caliente para expulsar el agua a un alto PSI (libras por pulgada cuadrada) en la superficie que está tratando. Esto brinda una limpieza profunda para: Limpieza de superficies: entradas de vehículos, aceras, entradas, patios y más. limpieza de la cubierta de la piscina</p>
+                        </div>
+                     
                      </figure>
                   </div>
                </div>
                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 thumb" style="margin: auto;">
-                  <div class="service-box ">
+                  <div class="service-box contenedorServices" id="cajaServices">
                      <figure>
                       
-                        <img  src="https://www.loofal.com/wp-content/uploads/2020/04/loofal-solar-work-solar-services.jpg" class="zoom img-fluid Imgfancybox"  alt="">
-                        </a>
-                        <span class="hoverle">
-                        <a href="https://www.loofal.com/wp-content/uploads/2020/04/loofal-solar-work-solar-services.jpg" class="fancybox" rel="ligthbox">Solar panels</a>
-                        </span> 
+                        <img  src="https://www.loofal.com/wp-content/uploads/2020/04/loofal-solar-work-solar-services.jpg" class="img-fluid Imgfancybox"  alt="">
+                        <div class="capaFigure" id="capa4">
+                           <a id="a4" class="afigure" onclick="abrirImagen4 ()">Landscape </a>
+                           <p class="p1figure" id="p4" >Mowing, edging and fertilizing lawns. Weeding and mulching landscape beds. Trimming small trees, hedges and shrubs. Removing unwanted, dead or damaged trees. Planting shrubs, flowers and trees.</p>
+                        </div>
+                        <div class="divBackground">
+
+                        </div>
                      </figure>
                   </div>
                </div>
@@ -369,21 +375,104 @@
       <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
       <script src="js/custom.js"></script>
       <script>
-         $(document).ready(function(){
-         $(".fancybox").fancybox({
-         openEffect: "none",
-         closeEffect: "none"
-         });
-         
-         $(".zoom").hover(function(){
-         
-         $(this).addClass('transition');
-         }, function(){
-         
-         $(this).removeClass('transition');
-         });
-         });
+        
          var w =0;  
+         var validador =1,validador2=1,validador3=1,validador4=1;
+function abrirImagen1(){
+
+
+if(validador==1){
+ 
+document.getElementById('capa1').style.boxShadow='0px 15px 25px';
+
+document.getElementById('capa1').style.backgroundColor ='rgb(60, 179, 113,0.7)';
+document.getElementById('a1').style.top='0%';
+document.getElementById('a1').style.color='black';
+document.getElementById('p1').style.visibility='visible';
+   validador=2;
+}else if(validador==2){
+document.getElementById('capa1').style.backgroundColor ='transparent';
+document.getElementById('a1').style.top='45%';
+document.getElementById('p1').style.visibility='hidden'; 
+document.getElementById('a1').style.color='#09ff8c';
+document.getElementById('capa1').style.boxShadow='0px 0px 2px';
+validador=1;
+
+
+}
+
+}
+
+function abrirImagen2(){
+
+
+if(validador2==1){
+
+document.getElementById('capa2').style.boxShadow='0px 15px 25px';
+document.getElementById('capa2').style.backgroundColor ='rgb(60, 179, 113,0.7)';
+document.getElementById('a2').style.top='0%';
+document.getElementById('a2').style.color='black';
+document.getElementById('p2').style.visibility='visible';
+   validador2=2;
+}else if(validador2==2){
+document.getElementById('capa2').style.backgroundColor ='transparent';
+document.getElementById('a2').style.top='45%';
+document.getElementById('p2').style.visibility='hidden'; 
+document.getElementById('a2').style.color='#09ff8c';
+document.getElementById('capa2').style.boxShadow='0px 0px 2px';
+validador2=1;
+
+
+}
+
+}
+
+function abrirImagen3(){
+
+
+if(validador3==1){
+document.getElementById('capa3').style.boxShadow='0px 15px 25px';
+document.getElementById('capa3').style.backgroundColor ='rgb(60, 179, 113,0.7)';
+document.getElementById('a3').style.top='0%';
+document.getElementById('a3').style.color='black';
+document.getElementById('p3').style.visibility='visible';
+   validador3=2;
+}else if(validador3==2){
+document.getElementById('capa3').style.backgroundColor ='transparent';
+document.getElementById('a3').style.top='45%';
+document.getElementById('p3').style.visibility='hidden'; 
+document.getElementById('a3').style.color='#09ff8c';
+document.getElementById('capa3').style.boxShadow='0px 0px 2px';
+validador3=1;
+
+
+}
+
+}
+
+function abrirImagen4(){
+
+
+if(validador4==1){
+   document.getElementById('capa4').style.boxShadow='0px 15px 25px';
+document.getElementById('capa4').style.backgroundColor ='rgb(60, 179, 113,0.7)';
+document.getElementById('a4').style.top='0%';
+document.getElementById('a4').style.color='black';
+document.getElementById('p4').style.visibility='visible';
+   validador4=2;
+}else if(validador4==2){
+document.getElementById('capa4').style.backgroundColor ='transparent';
+document.getElementById('a4').style.top='45%';
+document.getElementById('p4').style.visibility='hidden'; 
+document.getElementById('a4').style.color='#09ff8c';
+document.getElementById('capa4').style.boxShadow='0px 0px 2px';
+validador4=1;
+
+
+}
+
+}
+
 function openSideMenu(){
 
   

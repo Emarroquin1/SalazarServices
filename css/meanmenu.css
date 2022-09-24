@@ -202,6 +202,10 @@ a.meanmenu-reveal {
 	
 }
 
+.about-box {
+
+     overflow: hidden;
+}
 
 @media screen and (min-height: 480px) {
      .block {height: 100%}
