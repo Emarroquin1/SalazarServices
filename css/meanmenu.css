@@ -188,6 +188,7 @@ a.meanmenu-reveal {
 
 }
 
+
 .ImgCarusel{
      
      width: 100%;
@@ -214,9 +215,18 @@ a.meanmenu-reveal {
    .block4 {height: 100%}
 }
 
+.block {
+     height: 700px;
+  }
+
+
 @media screen and (min-width: 540px) {
    
    .about-box {width: 100%}
+
+   .block {
+     height: 300px;
+  }
 }
 
 .about-box img{
@@ -224,7 +234,7 @@ a.meanmenu-reveal {
 }
 
 .block2{
-     height: 500px;
+     height: 300px;
 }
 
 .block4{
@@ -235,9 +245,7 @@ a.meanmenu-reveal {
      height: 200px;
 }
 
-   .block {
-     height: 600px;
-  }
+ 
   .imagenCarucel{
      width: 100%;
      height: auto;

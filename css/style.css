@@ -1596,10 +1596,10 @@ margin-bottom: 20px;
 
 
 .service {
-	padding-top: 90px;
-	padding-bottom: 60px;
+	
+	padding-bottom: 20px;
 	background: #f4f4f4;
-	margin-top: 90px;
+	margin-top: 10px;
 }
 
 .service .titlepage span {
@@ -1645,11 +1645,11 @@ box-shadow: 0px 0px 0px;
 .contenedorServices figure .capaFigure a{
 
 cursor: pointer;
-color: #09ff8c;
+color: #000000;
 position: relative;
 top: 45%;
 bottom: 45%;	
-border:  solid #067512;;
+border:  solid #000000;;
 transition: 0.5s;
 
 
@@ -1659,8 +1659,10 @@ transition: 0.5s;
 
 
  transition: 0.4s;
-color: rgb(9, 255, 140);
+color: rgb(0, 0, 0);
 box-shadow: 0px 2px 20px;
+border-radius: 10px;
+background-color: rgba(60, 179, 113, 0.7);
 
 }
 
