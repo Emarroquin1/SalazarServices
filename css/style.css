@@ -1652,7 +1652,7 @@ border: 2px solid #000000;
 
 }
 .contenedorServices figure .capaFigure .afigure{
-	position: absolute;
+	position: relative;
 	top: 50%;
 	left: 50%;
     transform: translate(-50%, -50%);	
