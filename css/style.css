@@ -135,12 +135,7 @@ ol {
 	list-style: none;
 }
 
-p {
-	margin: 0px;
-	font-weight: 300;
-	font-size: 15px;
-	line-height: 24px;
-}
+
 
 a {
 	color: #222222;
@@ -486,7 +481,7 @@ transition: 0.5s;
 	z-index: 999;
 	top: 0;
 	right: 0;
-	background-color: #000;
+	background-color: #0d3113;
 	opacity: 1;
 	position: fixed;
 	transition: 0.5s;
@@ -1656,7 +1651,7 @@ border: 2px solid #000000;
 	top: 50%;
 	left: 50%;
     transform: translate(-50%, -50%);	
-font-size: large;	
+
 transition: 0.4s;
 color: rgb(255, 255, 255);
 box-shadow: 0px 2px 20px black;
@@ -1667,7 +1662,7 @@ background-color: rgba(0, 0, 0, 0.7);
 }
 
 .p1figure{
-	color: #000;
+	color: rgb(255, 255, 255);
 	visibility: hidden;
 }
 

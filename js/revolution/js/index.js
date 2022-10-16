@@ -10,8 +10,8 @@
      
         document.getElementById('capa1').style.boxShadow='0px 15px 25px';
         
-        document.getElementById('capa1').style.backgroundColor ='rgb(60, 179, 113,0.7)';
-        document.getElementById('a1').style.top='0%';
+        document.getElementById('capa1').style.backgroundColor ='rgb(8 84 42 / 70%)';
+        document.getElementById('a1').style.top='10%';
         document.getElementById('a1').style.color='rgb(9, 255, 140)';
         document.getElementById('p1').style.visibility='visible';
            validador=2;
@@ -38,8 +38,8 @@
     if(validador2==1){
     
     document.getElementById('capa2').style.boxShadow='0px 15px 25px';
-    document.getElementById('capa2').style.backgroundColor ='rgb(60, 179, 113,0.7)';
-    document.getElementById('a2').style.top='0%';
+    document.getElementById('capa2').style.backgroundColor ='rgb(8 84 42 / 70%)';
+    document.getElementById('a2').style.top='10%';
     document.getElementById('a2').style.color='rgb(9, 255, 140)';
     document.getElementById('p2').style.visibility='visible';
        validador2=2;
@@ -61,8 +61,8 @@
     
     if(validador3==1){
     document.getElementById('capa3').style.boxShadow='0px 15px 25px';
-    document.getElementById('capa3').style.backgroundColor ='rgb(60, 179, 113,0.7)';
-    document.getElementById('a3').style.top='0%';
+    document.getElementById('capa3').style.backgroundColor ='rgb(8 84 42 / 70%)';
+    document.getElementById('a3').style.top='10%';
     document.getElementById('a3').style.color='rgb(9, 255, 140)';
     document.getElementById('p3').style.visibility='visible';
        validador3=2;
@@ -84,8 +84,8 @@
     
     if(validador4==1){
        document.getElementById('capa4').style.boxShadow='0px 15px 25px';
-    document.getElementById('capa4').style.backgroundColor ='rgb(60, 179, 113,0.7)';
-    document.getElementById('a4').style.top='0%';
+    document.getElementById('capa4').style.backgroundColor ='rgb(8 84 42 / 70%)';
+    document.getElementById('a4').style.top='10%';
     document.getElementById('a4').style.color='rgb(9, 255, 140)';
     document.getElementById('p4').style.visibility='visible';
        validador4=2;
