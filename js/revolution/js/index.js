@@ -80,7 +80,7 @@
     }
     
     function abrirImagen4(){
-       e.preventDefault();
+     
     
     if(validador4==1){
        document.getElementById('capa4').style.boxShadow='0px 15px 25px';
