@@ -1647,8 +1647,8 @@ box-shadow: 0px 0px 0px;
 cursor: pointer;
 color: #000000;
 position: relative;
-top: 45%;
-bottom: 45%;	
+
+top: 45%;	
 border: 2px solid #000000;
 transition: 0.5s;
 
