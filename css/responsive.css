@@ -190,6 +190,11 @@
 
 }
 
+.afigure{
+
+    font-size: medium;
+  }
+
 @media only screen and (max-width: 1220px) {
     .contenedorServices figure .capaFigure{ width: 290px;
     }
@@ -225,10 +230,7 @@
 
 
 
-  .afigure{
 
-    font-size: medium;
-  }
   @media only screen and (max-width: 780px) {
     .contenedorServices figure .capaFigure{ width: 87.5%;
     }
