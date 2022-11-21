@@ -317,16 +317,16 @@
                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 offset-md-3">
                   <div class="contact">
                      
-                     <form>
+                     <form action="https://formsubmit.co/1emarroquinn1@gmail.com" method="POST">
                         <div class="row">
                            <div class="col-sm-12">
-                              <input class="contactus" placeholder="Phone" type="text" name="Email">
+                              <input id="txtPhone" class="contactus" placeholder="Phone" type="text" name="Email">
                            </div>
                            <div class="col-sm-12">
-                              <input class="contactus" placeholder="Email" type="text" name="Email">
+                              <input id="txtEmail" class="contactus" placeholder="Email" type="text" name="Email">
                            </div>
                            <div class="col-sm-12">
-                              <textarea class="textarea" placeholder="Comment" type="text" name="Message"></textarea>
+                              <textarea id="txtcoment" class="textarea" placeholder="Comment" type="text" name="Message"></textarea>
                            </div>
                            <div class="col-sm-12">
 
@@ -373,6 +373,33 @@ Select one or more services
             </div>
          </div>
       </div>
+
+
+<style>
+
+#app-whatsapp{
+	position: fixed;
+	right: 24px;
+	bottom: 25px;
+	width: 60px;
+	z-index: 1000;
+	display: none;
+}
+#app-whatsapp{
+	bottom: 95px;
+	display: block;
+}
+ #app-whatsapp i{
+	font-size: 63px;
+}
+#app-whatsapp i{
+	color: #1ebea5;
+}
+
+</style>
+      <a id="app-whatsapp" target="_blanck" href="https://api.whatsapp.com/send?phone=14693548963&amp;text=Hi!&nbsp;I&nbsp;would&nbsp;like&nbsp;to&nbsp;acquire&nbsp;your&nbsp;services">
+         <i class="fab fa-whatsapp"></i>
+      </a>
       <!-- end Testimonial --> 
       <!--  footer --> 
       <footr>
@@ -398,6 +425,7 @@ Select one or more services
             </div>
          </div>
       </footr>
+
    </div>
       <!-- end footer -->
       <!-- Javascript files--> 
@@ -410,9 +438,12 @@ Select one or more services
 
 
    
+      <script src="https://kit.fontawesome.com/ae9de5bf1f.js" crossorigin="anonymous"></script>
 
       <script src="js/custom.js"></script>
       <script src="js/revolution/js/index.js"></script>
     
    </body>
 </html>
+
+
