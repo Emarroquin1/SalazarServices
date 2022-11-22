@@ -186,9 +186,7 @@
 									jQuery(meanContainer).addClass("mean-container");
 									jQuery('.mean-container').prepend('<div class="mean-bar">'
 				                    +'<a href="#nav" class="meanmenu-reveal" style="'+meanStyles+'">Show Navigation</a><nav class="mean-nav"></nav>'+
-									'<a href="#usuario"  onclick="openSideMenu()"><img class="ImgNagbar ImgUsuario"'+ 
-									'src="images/usuario.png"' +
-									'/></a></div>');
+									'</div>');
 
 
 
