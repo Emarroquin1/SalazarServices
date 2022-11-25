@@ -1,0 +1,23 @@
+
+$sender= $_POST['email'];
+$coment= $_POST['coment'];
+$phone= $_POST['phone'];
+$service1= $_POST['service1'];
+
+$receiver= "1emarroquinn1@gmail.com";
+
+$send = "Sender: ".$sender."\n"."Coment: ".$coment."\n"."Phone: ".$phone;
+
+
+
+
+$issue = "Services: ".$service1;
+
+$header ="From: ".$sender."\r\n";
+$header .="Reply-To: ".$sender."\r\n";
+$mail = @mail($receiver,$issue,$send,$header);
+
+if($mail){
+    echo"<script>alert('Form sent successfully')</script>";
+    echo"<script>setTimeout(\"location.href='https://www.salazarservice.site/'\",100)</script>";
+}

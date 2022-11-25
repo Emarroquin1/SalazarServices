@@ -1,8 +1,44 @@
 <?php
 
-$send = $_POST['phone'];
-$email2= $_POST['email']
-$coment =$_POST['coment'];
-$destinatario= "1emarroquinn1@gmail.com"
+print_r($_POST);
 
-echo $send ." ". $email2." ". $coment;
+if($_SERVER["REQUEST_METHOD"] == "POST"){
+
+
+ 
+if(!empty($_POST['phone'] {
+
+}
+
+
+
+
+else{
+    $phone= $_POST['phone'];
+    $phone= test_input($_POST['phone']);
+  
+
+
+
+}
+
+
+ 
+
+ 
+
+}
+
+
+
+
+
+
+}
+
+function test_input($data){
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    return $data;
+    }

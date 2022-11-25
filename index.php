@@ -15,6 +15,8 @@
       <meta name="keywords" content="">
       <meta name="description" content="">
       <meta name="author" content="">
+
+    
       <!-- bootstrap css -->
       <link rel="stylesheet" href="css/bootstrap.min.css">
       <!-- style css -->
@@ -310,21 +312,32 @@
                   </div>
                </div>
             </div>
+      
             <div class="row">
              
                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 offset-md-3">
                   <div class="contact">
                      
-                     <form action="Php/contacto.php" method="POST">
+                  <?php include('Php/contacto.php'); ?>     
+                     
+
+                
+
+
+                     <form action="<?= $_SERVER['PHP_SELF']; ?>" method="POST">
+
                         <div class="row">
                            <div class="col-sm-12">
-                              <input id="txtPhone" class="contactus" placeholder="Phone" type="text" name="phone">
+                              <input id="txtPhone" class="contactus" placeholder="Phone"
+                               type="text" name="phone" value="<?= $phone ?>">
                            </div>
                            <div class="col-sm-12">
-                              <input id="txtEmail" class="contactus" placeholder="Email" type="text" name="email">
+                              <input id="txtEmail" class="contactus" placeholder="Email" type="text"
+                               name="email">
                            </div>
                            <div class="col-sm-12">
-                              <textarea id="txtcoment" class="textarea" placeholder="Comment" type="text" name="coment"></textarea>
+                              <textarea id="txtcoment" class="textarea"
+                               placeholder="Comment" type="text" name="coment"></textarea>
                            </div>
                            <div class="col-sm-12">
 
@@ -334,26 +347,26 @@ Select one or more services
                        <div class="form-check">
   
                         <input class="form-check-input" type="checkbox" value="Painting" id="flexCheckDefault" 
-                        name="service" >
+                        name="flexCheckDefault[]" >
                         <label class="form-check-label" for="flexCheckDefault">
                           Painting
                         </label>
                       </div>
                          
                       <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2" name="flexCheckDefault2" >
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2" name="flexCheckDefault[]" >
                           <label class="form-check-label" for="flexCheckDefault2">
                             Landscape 
                           </label>
                         </div>
                         <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3" name="flexCheckDefault3">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3" name="flexCheckDefault[]">
                           <label class="form-check-label" for="flexCheckDefault3">
                             Roofing 
                           </label>
                         </div>
                       <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault4" name="flexCheckDefault4">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault4" name="flexCheckDefault[]">
                           <label class="form-check-label" for="flexCheckDefault4">
                             Pressure wash
                           </label>
