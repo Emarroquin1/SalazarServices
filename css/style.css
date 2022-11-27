@@ -919,6 +919,13 @@ color: #cfcece;
 
 .wish-box a {
 	display: inline-block;
+	
+}
+
+.error {
+
+	color: red;
+	
 }
 
 .wish-box a:hover {

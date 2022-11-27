@@ -2,6 +2,8 @@
 
 
 
+
+
 <html lang="en">
    <head>
       <!-- basic -->
@@ -16,6 +18,7 @@
       <meta name="description" content="">
       <meta name="author" content="">
 
+     
     
       <!-- bootstrap css -->
       <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -30,7 +33,14 @@
       <!-- Tweaks for older IEs-->
       <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
-      <!--[if lt IE 9]>
+  
+  <script src="js/jquery.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script> 
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.13.0/jquery.mask.min.js" integrity="sha512-aufmzrIcxlxSqV0H82piwJmv94MgVC8RBw3KHggB5ZoZmeb6TADOehoN1yF/VAj/Smb0Tipy5cDqIoy/dd8RGA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+  <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
    </head>
@@ -58,12 +68,12 @@
                      <div class="limit-box">
                         <nav class="main-menu">
                            <ul class="menu-area-main">
-                              <li class="active"> <a href="index.html">Home</a> </li>
+                              <li class="active"> <a href="index.php">Home</a> </li>
                               <li> <a href="#about">About us</a> </li>
                               <li> <a href="#service"> Service</a> </li>
                               <li> <a href="#screenshot">Our Jobs</a> </li>
                         
-                              <li class="mean-last"> <a href="#contact">Contact us</a> </li>                              
+                              <li class="mean-last"> <a href="contac.php">Contact us</a> </li>                              
                            </ul>
                         </nav>
                      </div>
@@ -301,95 +311,7 @@
       </div>
       <!-- end service -->
    
-    
-      <!-- Testimonial -->
-      <div id="contact" class="contact">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-12">
-                  <div class="titlepage">
-                     <h3>Contact Us</h3>
-                  </div>
-               </div>
-            </div>
-      
-            <div class="row">
-             
-               <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 offset-md-3">
-                  <div class="contact">
-                     
-                  <?php include('Php/contacto.php'); ?>     
-                     
-
-                
-
-
-                     <form action="<?= $_SERVER['PHP_SELF']; ?>" method="POST">
-
-                        <div class="row">
-                           <div class="col-sm-12">
-                              <input id="txtPhone" class="contactus" placeholder="Phone"
-                               type="text" name="phone" value="<?= $phone ?>">
-                           </div>
-                           <div class="col-sm-12">
-                              <input id="txtEmail" class="contactus" placeholder="Email" type="text"
-                               name="email">
-                           </div>
-                           <div class="col-sm-12">
-                              <textarea id="txtcoment" class="textarea"
-                               placeholder="Comment" type="text" name="coment"></textarea>
-                           </div>
-                           <div class="col-sm-12">
-
-                       <label class="form-label" style="color: white;">
-Select one or more services 
-                       </label>
-                       <div class="form-check">
-  
-                        <input class="form-check-input" type="checkbox" value="Painting" id="flexCheckDefault" 
-                        name="flexCheckDefault[]" >
-                        <label class="form-check-label" for="flexCheckDefault">
-                          Painting
-                        </label>
-                      </div>
-                         
-                      <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2" name="flexCheckDefault[]" >
-                          <label class="form-check-label" for="flexCheckDefault2">
-                            Landscape 
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3" name="flexCheckDefault[]">
-                          <label class="form-check-label" for="flexCheckDefault3">
-                            Roofing 
-                          </label>
-                        </div>
-                      <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault4" name="flexCheckDefault[]">
-                          <label class="form-check-label" for="flexCheckDefault4">
-                            Pressure wash
-                          </label>
-                        </div>
-
-
-                        </div>
-                           <div class="col-sm-12">
-                              <button class="send" name="send" type="submit">Send</button>
-                           </div>
-                        
-                     </div>
-                     <input type="hidden" name="_next" value="https://emarroquin1.github.io/SalazarServices/">
-                     
-                     <input type="hidden" name="_captcha" value= "false">
-
-                     </form>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-
+   
 
 <style>
 
@@ -416,6 +338,37 @@ Select one or more services
       <a id="app-whatsapp" target="_blanck" href="https://api.whatsapp.com/send?phone=14693548963&amp;text=Hi!&nbsp;I&nbsp;would&nbsp;like&nbsp;to&nbsp;acquire&nbsp;your&nbsp;services">
          <i class="fab fa-whatsapp"></i>
       </a>
+
+      <!-- Messenger plugin del chat Code -->
+    <div id="fb-root"></div>
+
+<!-- Your plugin del chat code -->
+<div id="fb-customer-chat" class="fb-customerchat">
+</div>
+
+<script>
+  var chatbox = document.getElementById('fb-customer-chat');
+  chatbox.setAttribute("page_id", "111642841574736");
+  chatbox.setAttribute("attribution", "biz_inbox");
+</script>
+
+<!-- Your SDK code -->
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v15.0'
+    });
+  };
+
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
       <!-- end Testimonial --> 
       <!--  footer --> 
       <footr>
@@ -445,10 +398,10 @@ Select one or more services
    </div>
       <!-- end footer -->
       <!-- Javascript files--> 
-      <script src="js/jquery.min.js"></script> 
+      
       <script src="js/popper.min.js"></script> 
       <script src="js/bootstrap.bundle.min.js"></script> 
-      <script src="js/jquery-3.0.0.min.js"></script> 
+    
       <script src="js/plugin.js"></script> 
       <!-- sidebar --> 
 
