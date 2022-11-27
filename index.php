@@ -324,7 +324,7 @@
 	display: none;
 }
 #app-whatsapp{
-	bottom: 95px;
+	bottom: 20px;
 	display: block;
 }
  #app-whatsapp i{
@@ -332,6 +332,7 @@
 }
 #app-whatsapp i{
 	color: #1ebea5;
+
 }
 
 </style>
